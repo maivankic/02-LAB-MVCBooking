@@ -1,0 +1,15 @@
+﻿@model MVCBooking.Models.HotelBooking
+
+<h2>Create Booking</h2>
+
+<form asp-action="CreateBooking" method="post">
+	<div>
+		<label>Guest Name:</label>
+		<input asp-for="GuestName" class="form-control" />
+	</div>
+	<div>
+		<label>Room Number:</label>
+		<input asp-for="RoomNumber" type="number" class="form-control" />
+	</div>
+	<button type="submit" class="btn btn-success mt-2">Save</button>
+</form>
